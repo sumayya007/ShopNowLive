@@ -39,7 +39,9 @@ export class AdminServiceService {
       return this.http.delete("https://shopnowapi-ydrz.onrender.com/admin/removeUser/"+id);
     }
     removeCategory(id:any){
-      return this.http.delete("https://shopnowapi-ydrz.onrender.com/admin/removeCategory/"+id);
+      return this.http.delete("https://shopnowapi-ydrz.onrender.com/admin/removeCategory/"+id, {
+        responseType: "text"
+     });
     }
   getCategoryList() {
     return this.http.get<any>("https://shopnowapi-ydrz.onrender.com/admin/getCategoriesList");
