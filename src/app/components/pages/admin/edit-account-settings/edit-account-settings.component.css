@@ -42,6 +42,7 @@
 }
 .product-container{
     padding: 1rem;
+    margin-bottom: 100px;
   }
 
 @media screen and (min-width: 800px) {

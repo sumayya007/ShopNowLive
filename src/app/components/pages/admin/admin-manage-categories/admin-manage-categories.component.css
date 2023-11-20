@@ -26,6 +26,7 @@
   padding: 1rem;
   border: 1px solid grey;
   border-radius: 1rem;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 800px) {
