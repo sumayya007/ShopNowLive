@@ -48,11 +48,12 @@ export class AdminAddProductComponent implements OnInit{
     
   }
   onFileUpload(){
+    alert("hi");
     const imageBlob=this.fileInput.nativeElement.files[0];
     const file=new FormData();
     file.set('file',imageBlob);
     
-    this.http.post('http://localhost:3000/admin/',file).subscribe(response=>{
+    this.http.post('https://shopnowapi-ydrz.onrender.com/admin/',file).subscribe(response=>{
     const postFile=response;
       console.log("postfile",postFile);
       localStorage.setItem("postFile",JSON.stringify(postFile));
