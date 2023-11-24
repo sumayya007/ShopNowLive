@@ -58,7 +58,10 @@ export class AdminServiceService {
     console.log("inside getemployers")
     return this.http.get<any>("https://shopnowapi-ydrz.onrender.com/user/getUsers");
   }
-  
+  addImage(file:any){
+    console.log("inside img");
+    return this.http.post<any>("https://shopnowapi-ydrz.onrender.com/admin/addImage",file).subscribe(data=>{console.log(data)});
+  }
   addProduct(product:any){
     return this.http.post<any>("https://shopnowapi-ydrz.onrender.com/admin/addProduct",{"product":product}).subscribe(data=>{console.log(data)});
   }
