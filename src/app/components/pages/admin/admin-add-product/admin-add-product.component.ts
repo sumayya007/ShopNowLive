@@ -59,29 +59,29 @@ export class AdminAddProductComponent implements OnInit{
       localStorage.setItem("postFile",JSON.stringify(postFile));
     });
   }
-  adminAddProduct(value:any){
+  // adminAddProduct(value:any){
   
-    // let domElement = this._elementRef.nativeElement.querySelector(`#tag`).value;
-    // alert(domElement);
-    // this.product.tags=domElement;
-    // // for(let i=0;i<this.product.tags.length;i++){
+  //   // let domElement = this._elementRef.nativeElement.querySelector(`#tag`).value;
+  //   // alert(domElement);
+  //   // this.product.tags=domElement;
+  //   // // for(let i=0;i<this.product.tags.length;i++){
     
-    // // }
-    // alert("tags are"+this.product.tags)
-    const imageBlob=this.fileInput.nativeElement.files[0];
-    const file=new FormData();
-    file.set('file',imageBlob);
-    // this.http.post('https://shopnowapi-ydrz.onrender.com/admin/',file).subscribe(response=>{
-    //   const postFile=response;
-    //     console.log("postfile",postFile);
-    //     localStorage.setItem("postFile",JSON.stringify(postFile));
-    //   });
-    console.log(file);
-      this.adminService.addImage(file);
-    // this.adminService.addProduct(this.product);
-    alert("Product added successfully!!");
-     this.router.navigate(["/admin-dashboard"])
-  }
+  //   // // }
+  //   // alert("tags are"+this.product.tags)
+  //   const imageBlob=this.fileInput.nativeElement.files[0];
+  //   const file=new FormData();
+  //   file.set('file',imageBlob);
+  //   // this.http.post('https://shopnowapi-ydrz.onrender.com/admin/',file).subscribe(response=>{
+  //   //   const postFile=response;
+  //   //     console.log("postfile",postFile);
+  //   //     localStorage.setItem("postFile",JSON.stringify(postFile));
+  //   //   });
+  //   console.log(file);
+  //     this.adminService.addImage(file);
+  //   // this.adminService.addProduct(this.product);
+  //   alert("Product added successfully!!");
+  //    this.router.navigate(["/admin-dashboard"])
+  // }
 
   
 }
