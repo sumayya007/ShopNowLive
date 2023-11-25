@@ -77,7 +77,7 @@ export class AdminAddProductComponent implements OnInit{
     //     localStorage.setItem("postFile",JSON.stringify(postFile));
     //   });
       this.adminService.addImage(file);
-    this.adminService.addProduct(this.product);
+    // this.adminService.addProduct(this.product);
     alert("Product added successfully!!");
      this.router.navigate(["/admin-dashboard"])
   }
