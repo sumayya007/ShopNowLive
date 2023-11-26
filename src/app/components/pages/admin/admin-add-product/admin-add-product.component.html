@@ -4,7 +4,7 @@
     </div>
     <div class="right">
     <div class="product-container" >
-       <form #addProductForm="ngForm"  enctype="multipart/form-data" (ngSubmit)="addProductForm.value">
+       <form #addProductForm="ngForm" method="post"  enctype="multipart/form-data" (ngSubmit)="addProductForm.value">
         <h3>ADD PRODUCT</h3>
         <div class="table table-responsive">
            <tr>
