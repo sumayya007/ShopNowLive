@@ -6,7 +6,7 @@
     <div class="product-container" >
    
        <form class="uploadForm" action="https://shopnowapi-ydrz.onrender.com/admin/uploadimage" method="post" enctype="multipart/form-data">
-        <input type="file" id="image" name="image"/>
+        <input type="file" id="image" name="image" (change)="onFileUpload()"/>
         <input type="submit" name="submit" value="Submit" id="">
        </form>
       </div>

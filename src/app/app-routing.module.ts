@@ -49,7 +49,8 @@ const routes: Routes = [
   {path:'view-product',component:ViewProductComponent,canActivate:[authGuard]},
   {path:'checkout-page',component:CheckoutPageComponent,canActivate:[authGuard]},
   {path:'order-page',component:OrderPageComponent,canActivate:[authGuard]},
-  {path:'editaddress',component:EditAddressComponent,canActivate:[authGuard]}
+  {path:'editaddress',component:EditAddressComponent,canActivate:[authGuard]},
+ 
 ];
 
 @NgModule({
