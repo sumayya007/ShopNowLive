@@ -10,7 +10,7 @@
         <input type="submit" name="submit" value="Submit" id="">
        </form> -->
 
-      <form #addProductForm="ngForm" (ngSubmit)="addProductForm.value">
+      <form #addProductForm="ngForm" (ngSubmit)="adminAddProduct(addProductForm.value)">
         <h3>ADD PRODUCT</h3>
         <div class="table table-responsive">
            <tr>
