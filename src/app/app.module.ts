@@ -41,6 +41,8 @@ import { EditAdminManageUsersComponent } from './components/pages/admin/edit-adm
 import { EditAdminManageProductsComponent } from './components/pages/admin/edit-admin-manage-products/edit-admin-manage-products.component';
 import { EditAdminManageCategoriesComponent } from './components/pages/admin/edit-admin-manage-categories/edit-admin-manage-categories.component';
 
+import { AdminCreateProductComponent } from './components/pages/admin/admin-create-product/admin-create-product.component';
+
 
 
 @NgModule({
@@ -75,8 +77,8 @@ import { EditAdminManageCategoriesComponent } from './components/pages/admin/edi
     EditAdminManageUsersComponent,
     EditAdminManageProductsComponent,
     EditAdminManageCategoriesComponent,
-   
-   
+    AdminCreateProductComponent,
+
   ],
   imports: [
     BrowserModule,
