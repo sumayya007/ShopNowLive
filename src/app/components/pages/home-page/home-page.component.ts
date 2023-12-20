@@ -5,6 +5,7 @@ import { ScriptserviceService } from "src/app/services/scriptservice.service";
 const SCRIPT_PATH = 'src/assets/js/slider.js';
 declare let gapi: any;
 declare const slide: any;
+declare const newslide: any;
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -31,6 +32,7 @@ export class HomePageComponent implements OnInit{
     // scriptElement.onerror = () => {
     //   console.log('Could not load the Google API Script!');
     // }
+    newslide();
   }
   move() {
    slide();
