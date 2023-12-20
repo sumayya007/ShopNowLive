@@ -472,12 +472,18 @@ margin-top: -10rem;
   .gtco-testimonials {
     position: relative;
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
   }
   .gtco-testimonials h2 {
     font-size: 30px;
     text-align: center;
     color: #333333;
     margin-bottom: 50px;
+  }
+  .carwrapper{
+    display: flex;
+    flex-direction: row;
   }
   .owl-carousel {
     display: block;
