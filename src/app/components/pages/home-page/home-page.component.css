@@ -486,7 +486,8 @@ margin-top: -10rem;
     flex-direction: row;
   }
   .owl-carousel {
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     z-index: 1;
 }
