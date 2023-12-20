@@ -24,7 +24,7 @@ import { roleGuard } from './services/role.guard';
 import { EditAdminManageUsersComponent } from './components/pages/admin/edit-admin-manage-users/edit-admin-manage-users.component';
 import { EditAdminManageProductsComponent } from './components/pages/admin/edit-admin-manage-products/edit-admin-manage-products.component';
 import { EditAdminManageCategoriesComponent } from './components/pages/admin/edit-admin-manage-categories/edit-admin-manage-categories.component';
-import { AdminProductComponent } from './components/pages/admin/admin-product/admin-product.component';
+
 import { AdminCreateProductComponent } from './components/pages/admin/admin-create-product/admin-create-product.component';
 
 
