@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
       carousel(carousels[i]);
     }
   });
-}
+
   
   function carousel(root) {
     var
@@ -77,6 +77,7 @@ window.addEventListener('load', () => {
     }
   
   }
+}
 
 
 function slide(){
