@@ -44,6 +44,8 @@ export class AdminCreateProductComponent {
     
   }
   adminProduct(value:any){
-    
+    this.adminService.createProduct(this.product);
+    alert("Product created successfully!!");
+     this.router.navigate(["/admin-dashboard"]);
   }
 }

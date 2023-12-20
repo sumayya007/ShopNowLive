@@ -5,68 +5,68 @@
     <div class="right">
     <div class="product-container" >
         <h4>ADD PRODUCT</h4>
-        name:'',
-        price:0,
-        tags:'',
-        favorite:'false',
-        stars:0,
-        imageUrl:'',
-        category:''
+      
        <form #addProdForm="ngForm" (ngSubmit)="adminProduct(addProdForm.value)">
        
         <div class="table table-responsive">
             <tr>
                 <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
+                <td><input type="text" placeholder="Product name" [(ngModel)]="product.name" name="name" required #pname="ngModel"></td>
             </tr>
             <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
+                <small style="color:red" *ngIf="pname.invalid && pname.touched">Product name is required </small>
             </tr>
 
             <tr>
-                <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
+                <td>Enter Product price :</td>
+                <td><input type="text" placeholder="Product price" [(ngModel)]="product.price" name="price" required #pprice="ngModel"></td>
             </tr>
             <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
-            </tr>
-
-
-            <tr>
-                <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
-            </tr>
-            <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
+                <small style="color:red" *ngIf="pprice.invalid && pprice.touched">Product name is required </small>
             </tr>
 
 
             <tr>
-                <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
+                <td>Enter Product tags :</td>
+                <td><input type="text" placeholder="Product tags" [(ngModel)]="product.tags" name="tags" required #ptags="ngModel"></td>
             </tr>
             <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
-            </tr>
-
-            <tr>
-                <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
-            </tr>
-            <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
+                <small style="color:red" *ngIf="ptags.invalid && ptags.touched">Product name is required </small>
             </tr>
 
 
             <tr>
-                <td>Enter Product name :</td>
-                <td><input type="text" placeholder="Category name" [(ngModel)]="product.name" name="name" required #cname="ngModel"></td>
+                <td>Enter Product favorite :</td>
+                <td><input type="text" placeholder="Product favorite" [(ngModel)]="product.favorite" name="favorite" required #pfav="ngModel"></td>
             </tr>
             <tr class="msg">
-                <small style="color:red" *ngIf="cname.invalid && cname.touched">Category name is required </small>
+                <small style="color:red" *ngIf="pfav.invalid && pfav.touched">Product name is required </small>
+            </tr>
+
+            <tr>
+                <td>Enter Product stars :</td>
+                <td><input type="text" placeholder="Product stars" [(ngModel)]="product.stars" name="stars" required #pstars="ngModel"></td>
+            </tr>
+            <tr class="msg">
+                <small style="color:red" *ngIf="pstars.invalid && pstars.touched">Product name is required </small>
             </tr>
 
 
+            <tr>
+                <td>Enter Product imageUrl :</td>
+                <td><input type="text" placeholder="Product image" [(ngModel)]="product.imageUrl" name="image" required #pimage="ngModel"></td>
+            </tr>
+            <tr class="msg">
+                <small style="color:red" *ngIf="pimage.invalid && pimage.touched">Product name is required </small>
+            </tr>
+
+            <tr>
+                <td>Enter Product category :</td>
+                <td><input type="text" placeholder="Product category" [(ngModel)]="product.category" name="name" required #pcat="ngModel"></td>
+            </tr>
+            <tr class="msg">
+                <small style="color:red" *ngIf="pcat.invalid && pcat.touched">Product name is required </small>
+            </tr>
 
             <tr>
                 <input type="submit" value="Submit"  class="btn btn-danger" style="cursor:pointer"  >

@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
 export class AdminServiceService {
 
   
-  addProd(product:any) {
-    throw new Error('Method not implemented.');
-  }
+ 
 
    constructor(private http:HttpClient,private router:Router) { }
   
@@ -39,7 +37,9 @@ export class AdminServiceService {
       return this.http.put("https://shopnowapi-ydrz.onrender.com/admin/adminupdatecategory/"+id,{"category":newcategory}).subscribe(data=>{console.log("data is"+data)});
     }
     
-
+    createProduct(product:any){
+      return this.http.post<any>("https://shopnowapi-ydrz.onrender.com/admin/createProduct",{"product":product}).subscribe(data=>{console.log(data)});
+    }
     removeUser(id:any){
       return this.http.delete("https://shopnowapi-ydrz.onrender.com/admin/removeUser/"+id);
     }
