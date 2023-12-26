@@ -53,11 +53,11 @@
 
 
             <tr>
-                <td>Enter Product imageUrl :</td>
+                <td>Enter Product ImageUrl :</td>
                 <td><input #fileInput type="file"  id="image" name="image"  [(ngModel)]="product.imageUrl" #pimage="ngModel" required></td>
             </tr>
             <tr class="msg">
-                <small style="color:red" *ngIf="pimage.invalid && pimage.touched">Product name is required </small>
+                <small style="color:red" *ngIf="pimage.invalid && pimage.touched">Product name is required</small>
             </tr>
 
             <tr>
