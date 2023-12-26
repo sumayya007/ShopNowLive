@@ -42,6 +42,7 @@ import { EditAdminManageProductsComponent } from './components/pages/admin/edit-
 import { EditAdminManageCategoriesComponent } from './components/pages/admin/edit-admin-manage-categories/edit-admin-manage-categories.component';
 
 import { AdminCreateProductComponent } from './components/pages/admin/admin-create-product/admin-create-product.component';
+import { CarouselComponent } from './components/partials/carousel/carousel.component';
 
 
 
@@ -78,6 +79,7 @@ import { AdminCreateProductComponent } from './components/pages/admin/admin-crea
     EditAdminManageProductsComponent,
     EditAdminManageCategoriesComponent,
     AdminCreateProductComponent,
+    CarouselComponent,
 
   ],
   imports: [
