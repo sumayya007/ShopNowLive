@@ -535,8 +535,4 @@ margin-top: -10rem;
     letter-spacing: 1px;
     padding: 5px 10px;
   }
-  .carousel-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+ 
