@@ -538,5 +538,5 @@ margin-top: -10rem;
   .carousel-item{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
