@@ -11,6 +11,11 @@ html,
 button{
     font-family: "Quicksand","sans-serif";
 }
+@media (max-width:768px){
+    html{
+        font-size: 0.7rem;
+    }
+}
 body{
     margin: 0;
 }
