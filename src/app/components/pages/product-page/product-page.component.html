@@ -1,9 +1,9 @@
 <div >
-    <div >
+    
         
             
-            <header>
-                <div class="categories">
+        <div class="head">
+        <div class="categories">
             <ul class="indicator">
                 <li data-filter="all" (click)="categorize('All')" class="active">All</li>
                 <li data-filter="Blazer" (click)="categorize('Schoolbags')">Schoolbags</li>
@@ -13,7 +13,7 @@
                 
             </ul>
         </div>
-    </header>
+    
         <div class="filter-condition">
              <div class="input-group w-50">
                 <input class="form-control" type="text" name="" id="" [(ngModel)]="searchInput" (keyup)="filterProducts();">
@@ -23,6 +23,7 @@
              <button (click)="sort('desc')" class="arrow"><i class="fas fa-sort-amount-down "></i></button>
             </div>
             </div>
+           </div>
    
         <!-- <div id="head-block">
             <span>Sort by:</span>
@@ -34,7 +35,7 @@
                 </ul>
             </div>
         </div> --> 
-    </div>
+    
     
 <div class="product-wrapper" >
   

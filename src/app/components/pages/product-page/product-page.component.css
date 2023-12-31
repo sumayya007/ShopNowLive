@@ -132,6 +132,7 @@ header{
     flex:6;
 } */
 .categories{
+    flex:6;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -174,11 +175,21 @@ header ul li.active a{
     color: white;
     font-weight: bold;
 }
+.head{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:768px){
+    .head{
+        flex-direction: row;
+    }
+    
+}
 .filter-condition{
-  
+  flex:4
   display: flex;
   justify-content: flex-end;
-   
+   margin-top: 15px;
     font-size: 1rem;
     font-weight: bold;
     border-bottom: 2px solid #e5e5e5;
