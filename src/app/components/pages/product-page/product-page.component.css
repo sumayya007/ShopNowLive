@@ -186,7 +186,7 @@ header ul li.active a{
     
 }
 .filter-condition{
-  flex:4
+  flex:4;
   display: flex;
   justify-content: flex-end;
    margin-top: 15px;
